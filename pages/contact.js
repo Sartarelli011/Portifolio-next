@@ -29,7 +29,7 @@ function Contact() {
         <h1>Entre em contato</h1>
         <FormContainer onSubmit={sendEmail}>
           <input
-            placeholder="name"
+            placeholder="Name"
             required
             type="text"
             value={data.name}
@@ -39,8 +39,8 @@ function Contact() {
           />
 
           <input
-            placeholder="email"
             required
+            placeholder="Email"
             value={data.email}
             type="email"
             onChange={(e) =>
@@ -49,9 +49,9 @@ function Contact() {
           />
 
           <textarea
-            placeholder="message"
+            placeholder="Message"
             value={data.message}
-            rows="5"
+            rows="1"
             onChange={(e) =>
               setData((prevdata) => ({ ...prevdata, message: e.target.value }))
             }

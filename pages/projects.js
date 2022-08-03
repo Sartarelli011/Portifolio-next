@@ -33,7 +33,6 @@ function Projects() {
     <>
       <Header />
       <ProjectContainer>
-        <h1>Ola Aqui são meus projetos</h1>
         <Image
           src={img}
           objectPosition="center"
@@ -43,9 +42,10 @@ function Projects() {
         />
 
         <ProjectContent>
-          {Cards.map((card) => {
+          {Cards.map((card, index) => {
             return (
               <Card
+                key={index}
                 image={card.image}
                 title={card.title}
                 desc={card.desc}

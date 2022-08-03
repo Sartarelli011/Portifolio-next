@@ -36,6 +36,28 @@ export const EntryBtn = styled.button`
   a {
     color: #fff;
   }
+  /*320px — 480px: dispositivos móveis
+481px — 768px: iPads, tablets */
+  @media screen and (max-width: 1024px) {
+    font-size: 4rem;
+  }
+  @media screen and (max-width: 820px) {
+    font-size: 3.5rem;
+  }
+  @media screen and (max-width: 769px) {
+    font-size: 3rem;
+  }
+  @media screen and (max-width: 481px) {
+    font-size: 1.6rem;
+  }
+  @media screen and (max-width: 414px) {
+    font-size: 1.6rem;
+    padding: 1.5rem 2rem;
+  }
+  @media screen and (max-width: 390px) {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
 `;
 /* End Entry */
 
@@ -48,16 +70,41 @@ export const HeaderContainer = styled.header`
   flex-direction: row;
   align-items: center;
   border-bottom: #30475e 1px solid;
-  height: 10vh;
   justify-content: space-between;
-  width: 100%;
   padding: 20px;
+  width: 100%;
+  height: ${(props) => (props.show ? "100vh" : "10vh")};
 
   h1 {
     font-weight: 700;
     font-size: 1.8rem;
     margin-left: 1rem;
     color: #fff;
+    display: ${(props) => (props.show ? "none" : "flex")};
+  }
+  svg {
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  @media screen and (max-width: 900px) {
+    svg {
+      display: flex;
+    }
+  }
+  @media screen and (max-width: 414px) {
+    padding: 0;
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    padding: 0;
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 `;
 
@@ -82,6 +129,36 @@ export const MenuHeader = styled.nav`
       border-bottom: 2px solid #08b9e2;
       color: #fff;
     }
+    &.inactive {
+      color: grey;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    ul {
+      display: none;
+    }
+  }
+`;
+
+export const MenuResponsiveContainer = styled.div`
+  display: ${(props) => (props.show ? "flex" : "none")};
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+
+  ul {
+    font-size: 3rem;
+  }
+  li {
+    margin-top: 1.5rem;
+  }
+  a {
+    &:hover {
+      border-bottom: 2px solid #08b9e2;
+    }
+
     &.inactive {
       color: grey;
     }
@@ -157,6 +234,67 @@ export const HomeContent = styled.div`
       transition: 0.1s;
     }
   }
+  @media screen and (max-width: 730px) {
+    padding: 1rem;
+    margin-left: 3.5rem;
+  }
+  @media screen and (max-width: 670px) {
+    padding: 1rem;
+    margin-left: 1.6rem;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 2rem;
+    margin-left: 1.5rem;
+    h1 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.7rem;
+    }
+  }
+  @media screen and (max-width: 414px) {
+    margin-left: 0;
+    padding: 0.9rem;
+    gap: 1.5rem;
+    margin-left: 1rem;
+
+    h1 {
+      font-size: 2rem;
+      width: 100%;
+    }
+    p {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    padding: 0.5rem;
+    gap: 1.3rem;
+    margin-left: 1.5rem;
+
+    h1 {
+      font-size: 1.8rem;
+      width: 100%;
+    }
+    p {
+      font-size: 1.4rem;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    padding: 0.5rem;
+    gap: 1rem;
+    margin-left: 1rem;
+
+    h1 {
+      font-size: 1.8rem;
+      width: 100%;
+    }
+    p {
+      font-size: 1.4rem;
+      width: 100%;
+    }
+  }
 `;
 /* End home */
 
@@ -217,6 +355,102 @@ export const AboutContent = styled.div`
       transition: 0.1s;
     }
   }
+
+  @media screen and (max-width: 1230px) {
+    gap: 2rem;
+    padding: 1.5rem;
+    margin: 0;
+    width: 60%;
+  }
+  @media screen and (max-width: 1121px) {
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin: 0;
+    width: 70%;
+  }
+  @media screen and (max-width: 960px) {
+    gap: 1rem;
+    padding: 1.5rem;
+    margin: 0;
+    width: 75%;
+  }
+  @media screen and (max-width: 884px) {
+    gap: 0.8rem;
+    padding: 1.5rem;
+    margin: 0;
+    width: 80%;
+    h1 {
+      font-size: 1.7rem;
+    }
+  }
+  @media screen and (max-width: 830px) {
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0;
+    width: 80%;
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 820px) {
+    gap: 2rem;
+    padding: 1.5rem;
+    margin: 0;
+    width: 80%;
+  }
+  @media screen and (max-width: 780px) {
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0;
+    width: 80%;
+    h1 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    gap: 1rem;
+    padding: 1.5rem;
+    margin: 0;
+    width: 70%;
+  }
+  @media screen and (max-width: 765px) {
+    gap: 1rem;
+    padding: 1rem;
+    width: 80%;
+    margin: 0;
+  }
+  @media screen and (max-width: 414px) {
+    width: 90%;
+    margin: 0;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    p {
+      font-size: 0.8rem;
+    }
+    button {
+      width: 5.5rem;
+      font-size: 0.7rem;
+      padding: 0.5rem;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    margin: 0;
+    width: 92%;
+    padding: 0.5rem;
+    gap: 0.2rem;
+    h1 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 0.5rem;
+    }
+  }
 `;
 
 /*End About*/
@@ -231,15 +465,30 @@ export const ProjectContainer = styled.section`
   height: 80vh;
   width: 100vw;
   position: relative;
+
+  @media screen and (max-width: 414px) {
+    height: 100vh;
+  }
+  @media screen and (max-width: 375px) {
+    height: auto;
+    padding: 1rem;
+  }
 `;
 
 export const ProjectContent = styled.div`
   display: flex;
   justify-content: flex-start;
-  margin-left: 5rem;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
+  @media screen and (max-width: 414px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  @media screen and (max-width: 375px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 /*End Projects*/
 
@@ -261,6 +510,33 @@ export const CardContainer = styled.div`
   &:hover {
     transform: scale(1.1);
   }
+  @media screen and (max-width: 1102px) {
+    width: 19.5rem;
+  }
+  @media screen and (max-width: 1077px) {
+    width: 18rem;
+    height: 24rem;
+  }
+  @media screen and (max-width: 1007px) {
+    width: 17rem;
+    height: 23rem;
+  }
+  @media screen and (max-width: 959px) {
+    width: 16rem;
+    height: 21rem;
+  }
+  @media screen and (max-width: 910px) {
+    width: 15rem;
+    height: 20rem;
+  }
+  @media screen and (max-width: 414px) {
+    width: 15rem;
+    height: 15rem;
+  }
+  @media screen and (max-width: 375px) {
+    width: 15rem;
+    height: 15rem;
+  }
 `;
 export const ImageContainer = styled.div`
   display: flex;
@@ -271,6 +547,25 @@ export const ImageContainer = styled.div`
   width: 18rem;
   height: 14rem;
   border-radius: 10px;
+  @media screen and (max-width: 1077px) {
+    width: 17rem;
+    height: 19rem;
+  }
+  @media screen and (max-width: 959px) {
+    width: 15rem;
+    height: 8rem;
+  }
+  @media screen and (max-width: 910px) {
+    width: 14rem;
+    height: 7rem;
+    margin-top: 0.5rem;
+  }
+  @media screen and (max-width: 414px) {
+    width: 14rem;
+  }
+  @media screen and (max-width: 375px) {
+    width: 14rem;
+  }
 `;
 
 export const CardContent = styled.div`
@@ -302,6 +597,25 @@ export const CardContent = styled.div`
       transition: 0.1s;
     }
   }
+  @media screen and (max-width: 414px) {
+    gap: 0.5rem;
+    h1 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+    a {
+      font-size: 0.7rem;
+      width: 5rem;
+      padding: 0.5rem;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    h1 {
+      font-size: 1rem;
+    }
+  }
 `;
 
 /*End Card*/
@@ -328,29 +642,56 @@ export const ContactContainer = styled.div`
   }
 `;
 export const FormContainer = styled.form`
-  width: 40vw;
+  width: 50vw;
   height: 50vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
   margin-top: 1rem;
-  background-color: #000;
+  border-radius: 0.5rem;
+  background-color: #fff;
 
   input,
   textarea {
-    padding: 1rem;
-    border-style: none;
-    background-color: none;
+    margin-bottom: 1.5rem;
+    width: 80%;
     outline: 0;
-    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 0;
+    border-bottom: 2px solid rgba(200, 200, 200);
     font-size: 1rem;
     font-weight: 700;
-    width: 60%;
+    &:focus {
+      border-bottom: 2px solid purple;
+      transition: 0.5s ease-in-out;
+      color: black;
+    }
   }
+
   button {
+    color: #fff;
+    font-size: 1rem;
+    border-style: none;
+    border-radius: 0.5rem;
     padding: 1rem;
-    width: 5rem;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      152deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(121, 9, 111, 1) 100%,
+      rgba(58, 5, 85, 1) 100%
+    );
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+    }
+  }
+  @media screen and (max-width: 414px) {
+    width: 75vw;
+    height: 45vh;
   }
 `;
+
+/*End Contact*/
