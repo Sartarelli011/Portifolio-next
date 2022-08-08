@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { AboutContainer, AboutContent } from "../styles/styles";
 import Image from "next/image";
-import img1 from "../src/assets/work.jpg";
+import img1 from "../public/assets/work.jpg";
 
 function About() {
   return (

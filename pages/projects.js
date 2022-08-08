@@ -4,10 +4,10 @@ import Footer from "../components/Footer";
 import Card from "../components/Card";
 import { ProjectContainer, ProjectContent } from "../styles/styles";
 import Image from "next/image";
-import img from "../src/assets/background.jpg";
-import jogo from "../src/assets/jogodamemoria.png";
-import pokedex from "../src/assets/pokdex.png";
-import spotify from "../src/assets/spotify.png";
+import img from "../public/assets/background.jpg";
+import jogo from "../public/assets/jogodamemoria.png";
+import pokedex from "../public/assets/pokdex.png";
+import spotify from "../public/assets/spotify.png";
 function Projects() {
   const Cards = [
     {

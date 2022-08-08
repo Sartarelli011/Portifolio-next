@@ -1,5 +1,5 @@
 import { HomeContainer, HomeContent } from "../styles/styles";
-import img from "../src/assets/work3.jpg";
+import img from "../public/assets/work3.jpg";
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
