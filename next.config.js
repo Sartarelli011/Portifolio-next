@@ -4,9 +4,10 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  images: {
-    loader: "akamai",
-    path: "",
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
   },
 };
 
