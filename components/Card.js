@@ -21,9 +21,7 @@ function Card({ image, title, desc, link }) {
             <strong>Tecnologias:</strong>
             {desc}
           </p>
-          <a href={link} target="_blank">
-            View
-          </a>
+          <a href={link}>View</a>
         </CardContent>
       </CardContainer>
     </>

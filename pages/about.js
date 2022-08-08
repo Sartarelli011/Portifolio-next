@@ -34,7 +34,6 @@ function About() {
             <a
               href="https://drive.google.com/file/d/1xZX6RPlPF9_76-uuTUhkHeDUILqSDNav/view?usp=sharing"
               download
-              target="_blank"
             >
               Download
             </a>
