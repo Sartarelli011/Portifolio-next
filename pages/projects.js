@@ -39,6 +39,7 @@ function Projects() {
           layout="fill"
           objectFit="cover"
           quality={90}
+          alt="image"
         />
 
         <ProjectContent>

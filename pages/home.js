@@ -15,6 +15,7 @@ function Home() {
           objectFit="cover"
           quality={90}
           src={img}
+          alt="image"
         ></Image>
         <HomeContent>
           <h1>

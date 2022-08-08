@@ -15,6 +15,7 @@ function About() {
           objectFit="cover"
           quality={90}
           src={img1}
+          alt="image"
         ></Image>
         <AboutContent>
           <h1>About</h1>

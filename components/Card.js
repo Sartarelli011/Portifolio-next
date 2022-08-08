@@ -12,6 +12,7 @@ function Card({ image, title, desc, link }) {
             objectFit="contain"
             quality={90}
             src={image}
+            alt="image"
           ></Image>
         </ImageContainer>
 
