@@ -19,21 +19,16 @@ function About() {
         <AboutContent>
           <h1>About</h1>
           <p>
-            Sou nascido e criado em São Paulo, minha vida toda estive em cidade
-            grande, todos trabalhando, indo de um lugar a outro, não importando
-            a hora do dia, A famosa cidade que nunca dorme.
-            <br /> me assemelho um pouco com isso, não consigo ficar parado,
-            sempre estou buscando algum conhecimento novo, seja estudando ou
-            fazendo algum projeto pessoal, buscando melhorar projetos antigos,
-            tudo para obter uma maior experiencia na tecnologia.
-            <br /> Sou uma pessoa calma, com a cabeça no lugar e sei aonde quero
-            chegar, sei fazer a gestão do meu tempo, gosto de trabalhar em
-            equipe porque assim podemos solucionar o problema de forma mais
-            rápida e eficiente, e claro, aprender com os colegas de equipe.
-            Atualmente estou em busca da minha primeira oportunidade como
-            desenvolvedor front end.
-            <br /> Para saber mais sobre minhas habilidades, faça download do
-            meu currículo abaixo.
+            Nasci e cresci em uma cidade grande, São Paulo que sabemos o intuito
+            de ser um local, bem favorável em todas as áreas econômicas, sempre
+            agitada, independente do horário.
+            <br /> Sou uma pessoa calma, gosto de organizar minhas tarefas
+            diárias, fazendo bom uso do meu tempo. gosto de trabalhar em equipe
+            porque assim podemos solucionar o problema de forma mais rápida e
+            eficiente, e claro, aprender com os colegas de equipe.
+            <br /> Atualmente estou em busca da minha primeira oportunidade como
+            desenvolvedor front end. Para saber mais sobre minhas habilidades,
+            faça download do meu currículo abaixo.
           </p>
           <button>
             <a
