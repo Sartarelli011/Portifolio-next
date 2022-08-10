@@ -1,4 +1,4 @@
-import { HomeContainer, HomeContent } from "../styles/styles";
+import { HomeContainer, HomeContent } from "../styles/estilo";
 import img from "../public/assets/work3.jpg";
 import Image from "next/image";
 import Header from "../components/Header";

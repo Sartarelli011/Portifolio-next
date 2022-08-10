@@ -1,4 +1,4 @@
-import { FooterContainer } from "../styles/styles";
+import { FooterContainer } from "../styles/estilo";
 function Footer() {
   return (
     <FooterContainer>

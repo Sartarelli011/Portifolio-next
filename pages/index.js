@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { EntryContainer, EntryBtn } from "../styles/styles";
+import { EntryContainer, EntryBtn } from "../styles/estilo";
 import Link from "next/link";
 
 export default function Entry() {

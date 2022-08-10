@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import axios from "axios";
 import { useState } from "react";
-import { ContactContainer, FormContainer } from "../styles/styles";
+import { ContactContainer, FormContainer } from "../styles/estilo";
 function Contact() {
   const [data, setData] = useState({
     name: "",

@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
-import { ProjectContainer, ProjectContent } from "../styles/styles";
+import { ProjectContainer, ProjectContent } from "../styles/estilo";
 import Image from "next/image";
 import img from "../public/assets/background.jpg";
 import jogo from "../public/assets/jogodamemoria.PNG";

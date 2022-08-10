@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { AboutContainer, AboutContent } from "../styles/styles";
+import { AboutContainer, AboutContent } from "../styles/estilo";
 import Image from "next/image";
 import img1 from "../public/assets/work.jpg";
 

@@ -2,7 +2,7 @@ import {
   HeaderContainer,
   MenuHeader,
   MenuResponsiveContainer,
-} from "../styles/styles";
+} from "../styles/estilo";
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CardContainer, CardContent, ImageContainer } from "../styles/styles";
+import { CardContainer, CardContent, ImageContainer } from "../styles/estilo";
 
 function Card({ image, title, desc, link }) {
   return (
