@@ -5,9 +5,9 @@ import Card from "../components/Card";
 import { ProjectContainer, ProjectContent } from "../styles/styles";
 import Image from "next/image";
 import img from "../public/assets/background.jpg";
-import jogo from "../public/assets/jogodamemoria.png";
-import spotify from "../public/assets/spotify.png";
-import pokedex from "../public/assets/pokdex.png";
+import jogo from "../public/assets/jogodamemoria.PNG";
+import spotify from "../public/assets/spotify.PNG";
+import pokedex from "../public/assets/pokdex.PNG";
 
 function Projects() {
   const Cards = [
