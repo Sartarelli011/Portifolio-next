@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <HeaderContainer show={show}>
-      <h1>Gabriel S. Jaccoud</h1>
+      <h1>Gabriel Jaccoud</h1>
       <MenuHeader>
         <ul>
           <li>

@@ -12,7 +12,7 @@ export default function Entry() {
       </Head>
       <Link href="/home">
         <EntryBtn>
-          <a>Gabriel S. Jaccoud</a>
+          <a>Gabriel Jaccoud</a>
         </EntryBtn>
       </Link>
     </EntryContainer>
