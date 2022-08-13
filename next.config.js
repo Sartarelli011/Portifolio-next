@@ -4,10 +4,7 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  images: {
-    loader: "akamai",
-    disableStaticImages: true,
-  },
+
   basePath: "/Portifolio-next",
   assetPrefix: "/Portifolio-next",
 };
