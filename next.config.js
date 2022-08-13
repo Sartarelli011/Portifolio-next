@@ -4,7 +4,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-
+  images: {
+    unoptimized: true,
+  },
   basePath: "/Portifolio-next",
   assetPrefix: "/Portifolio-next",
 };
