@@ -6,7 +6,7 @@ const nextConfig = {
   },
   images: {
     loader: "akamai",
-    path: "/Portifolio-next/_next/static/images/",
+    imagesPublicPath: "/Portifolio-next/_next/static/media/",
   },
   basePath: "/Portifolio-next",
   assetPrefix: "/Portifolio-next",
