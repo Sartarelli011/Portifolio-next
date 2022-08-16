@@ -4,13 +4,6 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  images: {
-    loader: "akamai",
-    path: "",
-  },
-  imagesPublicPath: "/Portifolio-next/_next/static/media/",
-  basePath: "/Portifolio-next",
-  assetPrefix: "/Portifolio-next",
 };
 
 module.exports = nextConfig;
