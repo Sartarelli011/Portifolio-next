@@ -8,7 +8,7 @@ const nextConfig = {
     loader: "akamai",
     path: "",
   },
-  imagesPublicPath: "/Portifolio-next/_next/static/images/",
+  imagesPublicPath: "/Portifolio-next/_next/static/media/",
   basePath: "/Portifolio-next",
   assetPrefix: "/Portifolio-next",
 };
