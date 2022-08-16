@@ -9,8 +9,8 @@ const nextConfig = {
     path: "",
   },
   imagesPublicPath: "/Portifolio-next/_next/static/images/",
-  basePath: "/Portifolio-next/",
-  assetPrefix: "/Portifolio-next/",
+  basePath: "/Portifolio-next",
+  assetPrefix: "/Portifolio-next",
 };
 
 module.exports = nextConfig;
