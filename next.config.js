@@ -5,7 +5,7 @@ const nextConfig = {
     styledComponents: true,
   },
   images: {
-    loader: "akamai",
+    loader: "imgix",
     path: "",
   },
   basePath: "/Portifolio-next",
