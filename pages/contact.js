@@ -15,10 +15,10 @@ function Contact() {
     axios
       .post("/api/email", data)
       .then(() => {
-        return console.log("Obrigado pelo contato", data);
+        return alert("obrigado pelo contato!!!");
       })
       .catch((error) => {
-        return console.log("erro no contact", error);
+        return alert("Houve algum erro.");
       });
   }
 
@@ -52,6 +52,7 @@ function Contact() {
             placeholder="Message"
             value={data.message}
             rows="1"
+            required
             onChange={(e) =>
               setData((prevdata) => ({ ...prevdata, message: e.target.value }))
             }
