@@ -18,7 +18,7 @@ function Contact() {
         return alert("obrigado pelo contato!!!");
       })
       .catch((error) => {
-        return alert("Houve algum erro.");
+        return alert("Houve algum erro.", error);
       });
   }
 
